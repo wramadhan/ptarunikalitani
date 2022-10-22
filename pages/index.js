@@ -2,10 +2,10 @@ import Head from "next/head";
 import { useState } from "react";
 import Button from "../components/button";
 import Inputlogin from "../components/inputlogin";
-import Sideimg from "../components/sideimg";
 import Router, { useRouter } from "next/router";
 import Toplogin from "../components/toplogin";
 import Link from "next/link";
+import Sideimglog from "../components/sideimglog";
 
 export default function Home() {
   const router = useRouter();
@@ -52,8 +52,8 @@ export default function Home() {
       </Head>
 
       <main className="flex">
-        <Sideimg />
-        <div className="hp:px-0 px-6 w-full pt-16 md:w-1/2">
+        <Sideimglog />
+        <div className="hp:px-0 px-6 w-full pt-8 dxl:pt-16 md:w-1/2">
           <Toplogin
             title="Welcome Back!"
             desc="Please enter your account details to sign in"
