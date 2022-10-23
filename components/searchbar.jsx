@@ -17,7 +17,7 @@ const Searchbar = () => {
                     </div>
                     <div className="flex justify-between w-full mdlg:w-[232px]">
                         <div className="flex justify-between w-full mdlg:w-[156px] bg-white rounded-xl text-[#777777] border-[#E6E8EC] border-2 px-4 h-[52px]">
-                            <select className='w-full'>
+                            <select className='bg-white w-full'>
                                 <option value="highest price" >Sort By</option>
                                 <option value="highest price" >Highest Price</option>
                                 <option value="lower price" >Lower Price</option>
