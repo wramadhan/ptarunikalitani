@@ -1,4 +1,3 @@
-import Head from "next/head";
 import { useState } from "react";
 import Button from "../components/button";
 import Inputlogin from "../components/inputlogin";
@@ -6,6 +5,7 @@ import Router, { useRouter } from "next/router";
 import Toplogin from "../components/toplogin";
 import Link from "next/link";
 import Sideimglog from "../components/sideimglog";
+import Header from "../components/header";
 
 export default function Home() {
   const router = useRouter();
@@ -54,14 +54,7 @@ export default function Home() {
   };
   return (
     <div>
-      <Head>
-        <title>Login</title>
-        <meta
-          name="Carbon Exchange"
-          content="Carbon Exchange by Bank Rakyat Indonesia BRI"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Header status="Login" />
 
       <main className="flex">
         <Sideimglog />

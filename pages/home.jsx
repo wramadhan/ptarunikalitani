@@ -14,6 +14,7 @@ import Pagination from '@mui/material/Pagination';
 import Pagebutton from '../components/pagebutton'
 import Footer from '../components/footer'
 import Refreshpage from '../components/refreshpage'
+import Header from '../components/header'
 
 const Homepage = () => {
     const [burger, setBurger] = useState(false)
@@ -34,6 +35,7 @@ const Homepage = () => {
 
     return (
         <div>
+            <Header status='Home' />
             <Navbar burger={burger} klik={() => setBurger(!burger)} />
             <Searchbar />
             <Refreshpage />
