@@ -3,11 +3,11 @@ import Nogravity from "../images/nogravity.png"
 
 const Card = ({ datas }) => {
     return (
-        <div className='flex mdlg:px-3 flex-wrap justify-evenly'>
+        <div className='flex mdlg:px-3 flex-wrap hpmax:justify-center justify-evenly'>
             {datas.map((item, index) => {
                 return (
-                    <div key={index} className="mx-6 mb-6">
-                        <div className='w-[318px] h-[500px] px-4 py-[35px]'>
+                    <div key={index} className="mx-6 mdmax:mx-auto mb-6">
+                        <div className='w-[318px] h-[500px] hp:px-4 py-[35px]'>
                             <div className='bg-white shadow-lg w-[318px] h-[500px] px-4 py-[25px]'>
                                 <Image src={item.photo} alt="card image" className="w-[286px] h-[160px]" />
                                 <h1 className='font-bold text-2xl'>{item.title}</h1>

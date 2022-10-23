@@ -65,7 +65,7 @@ export default function Home() {
 
       <main className="flex">
         <Sideimglog />
-        <div className="hpmax:px-0 px-[105px] w-full py-4 h-screen dxl:pt-16 md:w-1/2">
+        <div className="hpmax:px-6 w-full py-4 h-screen dxl:pt-16 md:w-1/2">
           <Toplogin
             title="Welcome Back!"
             desc="Please enter your account details to sign in"
@@ -91,7 +91,7 @@ export default function Home() {
           {wrongPass ? (
             <p className="text-[#E84040] mt-1.5">Password is invalid</p>
           ) : null}
-          <div className="mt-8 flex justify-between">
+          <div className="mt-8 flex mx-auto w-full hp:w-[432px] justify-between">
             <div className="flex">
               <input
                 className="w-6 h-6 mr-2 border-[#B5B6B6]"
