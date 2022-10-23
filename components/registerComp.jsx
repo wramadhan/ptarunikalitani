@@ -36,6 +36,11 @@ const Registercomp = () => {
                 </div>
                 <Regisloc />
                 <Button link={handleRegister} value="Sign Up" />
+                <p className="text-secondary hover:text-secondary/70 my-8 text-center">
+                    <button>
+                        Register as company
+                    </button>
+                </p>
                 <p className="text-secondary text-center">
                     Already have an account??{" "}
                     <Link href="/"><button

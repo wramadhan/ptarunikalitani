@@ -79,7 +79,9 @@ export default function Home() {
             placeholder="Enter your username or ID"
           />
           {wrong ? (
-            <p className="text-[#E84040] mt-1.5">Username is invalid</p>
+            <p className="text-[#E84040] mt-1.5 w-full hp:w-[432px] mx-auto">
+              Username is invalid
+            </p>
           ) : null}
           <Inputlogin
             handleFill={(e) => handleFillPass(e)}
@@ -89,7 +91,9 @@ export default function Home() {
             placeholder="Enter your password"
           />
           {wrongPass ? (
-            <p className="text-[#E84040] mt-1.5">Password is invalid</p>
+            <p className="text-[#E84040] mt-1.5 w-full hp:w-[432px] mx-auto">
+              Password is invalid
+            </p>
           ) : null}
           <div className="mt-8 flex mx-auto w-full hp:w-[432px] justify-between">
             <div className="flex">
