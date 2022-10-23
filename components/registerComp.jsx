@@ -1,11 +1,14 @@
 import Inputlogin from "./inputlogin";
-import Sideimg from './sideimg';
+import Sideimglog from './sideimglog';
 import Button from './button';
 import Link from 'next/link'
 import Toplogin from './toplogin';
 import Regisloc from './regisloc';
+import Router, { useRouter } from "next/router";
+
 
 const Registercomp = () => {
+    const router = useRouter();
     const handleRegister = () => {
         router.push({
             pathname: "/",
@@ -13,9 +16,9 @@ const Registercomp = () => {
     };
     return (
         <main className="md:flex h-full w-full">
-            <Sideimg />
+            <Sideimglog />
 
-            <div className="hp:px-0 px-6 w-full pt-16 md:w-1/2">
+            <div className="hp:px-0 h-screen overflow-y-auto px-6 w-full py-16 md:w-1/2">
                 <Toplogin
                     title="Register"
                     desc="Please enter your account details to sign up"
@@ -32,7 +35,7 @@ const Registercomp = () => {
                     </h2>
                 </div>
                 <Regisloc />
-                <Button value="Sign Up" />
+                <Button link={handleRegister} value="Sign Up" />
                 <p className="text-secondary text-center">
                     Already have an account??{" "}
                     <Link href="/"><button
