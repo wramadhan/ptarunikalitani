@@ -37,8 +37,9 @@ const Registercomp = () => {
                 <Regisloc />
                 <Button link={handleRegister} value="Sign Up" />
                 <p className="text-secondary hover:text-secondary/70 my-8 text-center">
-                    <button>
+                    <button><Link href="/regiscompany">
                         Register as company
+                    </Link>
                     </button>
                 </p>
                 <p className="text-secondary text-center">
